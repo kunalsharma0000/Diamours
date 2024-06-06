@@ -135,7 +135,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
     "https://thediamour.com",
-    "https://diamour-frontend.vercel.app",
+    "https://diamour-frontend-one.vercel.app",
     "https://diamours.vercel.app",
 ]
 
