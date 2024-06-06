@@ -12,7 +12,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", get_random_secret_key())
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", "False") == "True"
 
-ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost,vercel.app").split(",")
+ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost").split(",")
 
 # Application definition
 DEVELOPMENT_MODE = os.getenv("DEVELOPMENT_MODE", "False") == "True"
@@ -135,8 +135,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
     "https://thediamour.com",
-    "https://diamour-frontend-one.vercel.app",
-    "https://diamours.vercel.app",
+    "https://diamour-frontend.vercel.app",
+    "https://diamour-frontend-one.vercel.app"
 ]
 
 from .cdn.conf import *
