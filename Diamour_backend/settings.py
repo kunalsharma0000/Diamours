@@ -136,6 +136,7 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:3000",
     "https://thediamour.com",
     "https://diamour-frontend.vercel.app",
+    "https://diamours.vercel.app",
 ]
 
 from .cdn.conf import *
