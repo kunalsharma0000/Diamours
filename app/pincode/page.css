@@ -1,0 +1,108 @@
+@font-face {
+  font-family: ctr;
+  src: url("../../public/assets/fonts/Canela-Regular-Trial.otf");
+}
+@font-face {
+  font-family: pr;
+  src: url("../../public/assets/fonts/Poppins-Regular.ttf");
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px;
+  gap: 50px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90vw;
+  height: 30vh;
+  flex-direction: column;
+  gap: 40px;
+  background-image: url("/map.jpeg");
+  position: relative;
+  color: white;
+  margin: 1vw;
+  border-radius: 10px;
+}
+
+.input {
+  width: 30vw;
+  height: 4vh;
+  font-family: pr;
+  font-size: 18px;
+}
+.input-btn {
+  height: 4vh;
+  font-weight: bold;
+  padding: 10px;
+  color: var(--skin);
+  font-family: pr;
+  background: var(--light-green);
+  display: flex;
+  align-items: center;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+}
+.veal {
+  width: 90vw;
+  height: 30vh;
+  margin: 1vw;
+  border-radius: 10px;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 1;
+}
+.z {
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.header h1 {
+  font-family: ctr;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-family: ctr;
+}
+
+.result-icon {
+  color: green;
+}
+.result-text {
+  font-size: 48px;
+  text-align: center;
+}
+
+.wrong {
+  color: red;
+}
+
+@media (max-width: 600px) {
+  .result-text,
+  h1 {
+    font-size: 30px;
+  }
+  .input {
+    width: 50vw;
+    height: 4vh;
+    font-family: pr;
+    font-size: 16px;
+  }
+  .input-container {
+    margin-top: 30px;
+  }
+}

@@ -1,0 +1,127 @@
+@font-face {
+  font-family: ctr;
+  src: url("../../public/assets/fonts/Canela-Regular-Trial.otf");
+}
+
+@font-face {
+  font-family: ctm;
+  src: url("../../public/assets/fonts/Canela-Medium-Trial.otf");
+}
+
+@font-face {
+  font-family: cctb;
+  src: url("../../public/assets/fonts/CanelaCondensed-Bold-Trial.otf");
+}
+
+@font-face {
+  font-family: pr;
+  src: url("../../public/assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: pm;
+  src: url("../../public/assets/fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: psb;
+  src: url("../../public/assets/fonts/Poppins-SemiBold.ttf");
+}
+
+.productCard {
+  width: 268px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+}
+
+.productCard a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.productBag {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  border: 1px solid #808080;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.productImg {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: var(--white);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.productImg img {
+  width: 100%;
+  height: 100%;
+}
+
+a.productText {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.ptName {
+  color: #01321F;
+  font-family: pm;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.22px;
+  text-transform: uppercase;
+}
+
+.ptPrice {
+  color: #01321F;
+  font-family: pr;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.22px;
+}
+
+@media (max-width: 540px) {
+  .productCard {
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .productImg {
+    padding: 6px;
+    background: var(--white);
+  }
+
+  .productText {
+    gap: 6px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .ptName {
+    font-size: 24px;
+  }
+
+  .ptPrice {
+    font-size: 22px;
+  }
+}

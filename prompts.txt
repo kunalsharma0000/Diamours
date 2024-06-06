@@ -1,0 +1,60 @@
+{'sparkling-hearts-finesse-earrings': {'videos': ['gold.mp4', 'white.mp4', 'rose.mp4']}, 'blooming-pink-panache-earrings': {'videos': ['gold.mp4', 'white.mp4', 'rose.mp4']}, 'nonagon-enchante': {'videos': ['gold.mp4', 'white.mp4', 'rose.mp4']}, 'hamsa-heart-harmony-pendant': {'videos': ['gold.mp4', 'white.mp4', 'rose.mp4']}, 'sparkling-hearts-cascade-earrings': {'videos': ['gold.mp4', 'white.mp4', 'rose.mp4']}, 'floral-trinity-royale-ring': {'videos': ['gold.mp4', 'white.mp4', 'rose.mp4']}, 'pink-panache-trinity': {'videos': ['gold.mp4', 'white.mp4', 'rose.mp4']}, 'butterfly-cascade-charms': {'videos': ['gold.mp4']}, 'aura-fusion-drops': {'videos': ['gold.mp4', 'white.mp4', 'rose.mp4']}, 'winged-rosy-radiance': {'videos': ['gold.mp4', 'white.mp4', 'rose.mp4']}, 'classic-halo-pendant': {'videos': ['gold.mp4', 'white.mp4', 'rose.mp4']}, 'charming-doll-delight': {'videos': ['gold.mp4', 'white.mp4', 'rose.mp4']}, 'dazzling-halo-pendant': {'videos': ['gold.mp4', 'rose.mp4']}, 'dazzling-drops-hourglass': {'videos': ['gold.mp4', 'white.mp4', 'rose.mp4']}, 'binate-fusion-drops-earrings': {'videos': ['white.mp4', 'rose_1.mp4', 'rose.mp4']}, 'spiral-serenity': {'videos': ['gold.mp4', 'white.mp4', 'rose.mp4']}, 'trinity-hearts-cascade-earrings': {'videos': ['gold.mp4', 'white.mp4', 'rose.mp4']}}
+
+Make a program which takes the above as an input 
+
+and also takes this as an input:
+const ProductData = [
+    { 
+        "id": "1",
+        "prodName": "The Spiral Serenity",
+        "prodSubName": "",
+        "prodCat": "Rings",
+        "prodPrice": "84360",
+        "prodImage": "1.jpg",
+        "prodDesc": "The Spiral Serenity ring redefines elegance and allure. Gracefully coiled layers intertwine to form a mesmerizing spiral, adorned with brilliant diamonds that ignite a radiant dance of light. Crafted with meticulous precision, this ring epitomizes the art of refinement. Its enchanting design exudes a sense of serenity, while the gleaming diamonds add an opulent touch, showcasing the perfect balance of luxury and sophistication. Elevate your style and embrace the enchantment of \"The Spiral Serenity\" – a true celebration of individuality and elegance.",
+        "prodSlug": "the-spiral-serenity",
+        "prodImages": {
+            "gold": ["1-gold-1.jpg", "1-gold-2.jpg", "1-gold-3.jpg"],
+            "silver": ["1.jpg","1.jpg", "1-silver-2.jpg"],
+            "copper": ["1-copper-1.jpg", "1-copper-2.jpg", "1-copper-3.jpg"]
+        }
+    },
+    {
+        "id": "2",
+        "prodName": "Aura Fusion Drops",
+        "prodSubName": "",
+        "prodCat": "Earrings",
+        "prodPrice": "97570",
+        "prodImage": "2.jpg",
+        "prodDesc": "The mesmerizing Aura Fusion Drops earrings is a true marvel of contemporary elegance and artistic finesse. Embrace a new dimension of sophistication with these oval-shaped masterpieces, carefully crafted to captivate every gaze. The earrings boast a seamless fusion of design, featuring a smaller oval nestled within a larger one, exuding a sense of enchanting harmony. As they gracefully dangle, they bestow an air of grace on the wearer, illuminating their aura with an alluring radiance.",
+        "prodSlug": "aura-fusion-drops",
+        "prodImages": {
+            "gold": ["2-gold-1.jpg", "2-gold-2.jpg", "2-gold-3.jpg"],
+            "silver": ["2.jpg", "2-silver-2.jpg", "2-silver-3.jpg"],
+            "copper": ["2-copper-1.jpg", "2-copper-2.jpg", "2-copper-3.jpg"]
+        }
+    },
+    {
+        "id": "3",
+        "prodName": "Nonagon Enchanté",
+        "prodSubName": "",
+        "prodCat": "Rings",
+        "prodPrice": "49806",
+        "prodImage": "3.jpg",
+        "prodDesc": "Introducing our exquisite Nonagon Enchanté finger ring—a spellbinding masterpiece that redefines luxury and sophistication. Embrace the allure of a nine-sided polygon design, crafted to captivate hearts with its mesmerizing elegance. Each delicate side of the nonagon shape glimmers with brilliance, elevating your style with an aura of enchantment. As you slip it onto your finger, feel the magical charm that emanates from this timeless piece, ready to captivate the world around you. Whether it's a special occasion or a moment of self-celebration, this ring becomes your statement of individuality.",
+        "prodSlug": "nonagon-enchante",
+        "prodImages": {
+            "gold": ["3-gold-1.jpg", "3-gold-2.jpg", "3-gold-3.jpg"],
+            "silver": ["3.jpg", "3-silver-2.jpg", "3-silver-3.jpg"],
+            "copper": ["3-copper-1.jpg", "3-copper-2.jpg", "3-copper-3.jpg"]
+        }
+    },
+]
+
+searches for the same slug in this product data array 
+
+then if that slug is found it adds the video array in that particular object.
+
+it prints the whole list as valid json in console.
+
+using node js

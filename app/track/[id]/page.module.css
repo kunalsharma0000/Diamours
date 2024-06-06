@@ -1,0 +1,140 @@
+@font-face {
+  font-family: ctr;
+  src: url("../../../public/assets/fonts/Canela-Regular-Trial.otf");
+}
+
+@font-face {
+  font-family: ctm;
+  src: url("../../../public/assets/fonts/Canela-Medium-Trial.otf");
+}
+
+@font-face {
+  font-family: cctb;
+  src: url("../../../public/assets/fonts/CanelaCondensed-Bold-Trial.otf");
+}
+
+@font-face {
+  font-family: pr;
+  src: url("../../../public/assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: pm;
+  src: url("../../../public/assets/fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: psb;
+  src: url("../../../public/assets/fonts/Poppins-SemiBold.ttf");
+}
+
+.main a {
+  text-decoration: none;
+}
+/* Updated page.css */
+.custom_header {
+  /* Add custom styles for header */
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  flex-direction: column;
+  padding: 50px;
+  background: var(--dark-green);
+}
+
+.custom_header h1 {
+  /* Add custom styles for header h1 */
+  font-family: ctr;
+  font-size: 60px;
+  color: var(--skin);
+}
+
+.custom_header hr {
+  /* Add custom styles for header hr */
+  background: var(--dark-green);
+  height: 3px;
+  width: 100%;
+}
+
+.custom_section {
+  /* Add custom styles for section */
+  background: var(--dark-green);
+  padding: 50px 0;
+}
+.custom_section h5 {
+  /* Add custom styles for section */
+  color: white !important;
+  font-family: pr;
+}
+
+.custom_product {
+  /* Add custom styles for product */
+  background: var(--light-green);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  padding-left: 200px;
+}
+
+.custom_product div {
+  /* Add custom styles for product div */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 10px;
+  gap: 20px;
+}
+
+.custom_title {
+  /* Add custom styles for title */
+  font-family: ctr;
+  color: #fff;
+  font-size: 36px;
+}
+
+.custom_delivery {
+  /* Add custom styles for delivery */
+  font-size: 24px;
+  font-family: psb;
+  color: var(--skin);
+}
+
+.custom_button {
+  /* Add custom styles for button */
+  display: flex;
+  width: 230px;
+  height: 44px;
+  max-width: 230px;
+  flex-direction: column;
+  justify-content: center;
+  justify-content: center;
+  align-items: center;
+  color: var(--skin);
+  background: var(--light-green);
+  border: 3px solid var(--skin);
+  font-family: pr;
+}
+/* a{
+  text-decoration: none;
+} */
+@media (max-width: 768px) {
+  .custom_product {
+    flex-direction: column;
+    padding-left: 00px;
+  }
+  .custom_header h1 {
+    /* Add custom styles for header h1 */
+    font-family: ctr;
+    font-size: 40px;
+    color: var(--skin);
+  }
+  .custom_header {
+    /* Add custom styles for header */
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    padding: 30px;
+    background: var(--dark-green);
+  }
+}

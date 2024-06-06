@@ -1,0 +1,56 @@
+/* @font-face {
+  font-family: pr;
+  src: url("../../public/assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: psb;
+  src: url('../../public/assets/fonts/Poppins-SemiBold.ttf');
+}
+
+
+
+.modaltitle {
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.close {
+  margin-top: 0px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.primarybtn {
+  background: green;
+  color: #fff;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.modelbody {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.inputtext {
+  width: 50px;
+}
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 16px;
+    height: 62px;
+  }
+}
+
+@media (max-width: 600px) {
+  .modaltitle {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+} */

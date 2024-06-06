@@ -1,0 +1,57 @@
+@font-face {
+    font-family: ctr;
+    src: url('../../public/assets/fonts/Canela-Regular-Trial.otf');
+}
+
+@font-face {
+    font-family: ctm;
+    src: url('../../public/assets/fonts/Canela-Medium-Trial.otf');
+}
+
+@font-face {
+    font-family: cctb;
+    src: url('../../public/assets/fonts/CanelaCondensed-Bold-Trial.otf');
+}
+
+@font-face {
+    font-family: pr;
+    src: url('../../public/assets/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: pm;
+    src: url('../../public/assets/fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: psb;
+    src: url('../../public/assets/fonts/Poppins-SemiBold.ttf');
+}
+
+.category {
+    /* background: var(--light-green); */
+    background:#EEF2E3;
+}
+
+.section2 {
+    padding: 80px 80px 20px;
+}
+
+.catHeading {
+    text-align: center;
+    color: #01321F;  /*var(--skin);*/
+    font-family: ctm;
+    font-size: 40px;
+    line-height: 150%;
+    letter-spacing: -0.44px;
+}
+
+@media (max-width: 540px) {
+    .section2 {
+        padding: 40px 16px 20px;
+    }
+    
+    .catHeading {
+        font-size: 24px;
+    }
+}

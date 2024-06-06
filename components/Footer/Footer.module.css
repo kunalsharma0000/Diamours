@@ -1,0 +1,164 @@
+.footer {
+    background: #EEF2E3; /*var(--light-green);*/
+    display: flex;
+    flex-direction: column;
+    padding: 60px 80px 20px;
+    border-top: 1px solid var(--dark-green);
+}
+
+.footerTop{
+    padding-bottom: 80px;
+    width: 440px;
+}
+
+.footerTop img{
+    width: 100%;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.footerMiddle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fmLeft {
+    display: flex;
+    gap: 40px;
+}
+
+.fmWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fmwHeading {
+    color: #01321F;
+    font-family: pm;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -0.198px;
+    text-transform: uppercase;
+}
+
+.fmwText {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.fmwtPara {
+    color: #01321F;
+    font-family: pr;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.176px;
+    text-transform: capitalize;
+}
+
+.fmwBigHeading {
+    display: flex;
+    gap: 20px;
+     color: #01321F; /*var(--white); */
+    font-family: pr;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.22px;
+}
+
+.footerBottom {
+    padding: 28px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fbLeft {
+    color: #01321F;
+    font-family: pr;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.176px;
+}
+
+.fbRight {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #01321F;
+}
+
+.fbRight img {
+    width: 50%;
+}
+
+@media (max-width: 540px) {
+    .footer {
+        padding: 40px 16px 10px;
+        position: relative;
+    }
+    
+    .footerTop{
+        /* padding-bottom: 140px; */
+        padding-bottom: 40px;
+        width: 195px;
+    }
+    
+    .fmLeft {
+        gap: 28px;
+    }
+    
+    .fmWrap {
+        gap: 10px;
+    }
+    
+    .fmwHeading {
+        font-size: 14px;
+    }
+    
+    .fmwText {
+        gap: 6px;
+    }
+    
+    .fmwtPara {
+        font-size: 12px;
+    }
+
+    /* .fmRight{
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        padding: 0 16px;
+    } */
+    
+    .fmwBigHeading {
+        gap: 12px;
+        font-size: 14px;
+    }
+    
+    .footerBottom {
+        padding: 20px 0;
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .fbLeft {
+        font-size: 12px;
+    }
+    
+    .fbRight {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    .fbRight img {
+        width: 30%;
+    }
+}

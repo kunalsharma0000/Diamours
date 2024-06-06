@@ -1,0 +1,161 @@
+.orderSummaryBox {
+    display: flex;
+    width: 420px;
+    padding: 24px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    border-radius: 16px;
+    border: 1px solid #f4f4f4;
+    height: fit-content;
+}
+
+.cwrPrice {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.cwrpWrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.cwrpwLeft {
+    color: #9d9ea2;
+    font-family: pr;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.cwrpwRight {
+    color: #060709;
+    font-family: psb;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.cwrCoupon {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.cwrCoupon input {
+    height: 48px;
+    padding: 4px 24px;
+    border-radius: 8px;
+    border: 1px solid #F4F4F4;
+    background: var(--white);
+    outline: none;
+    font-family: pr;
+    color: #C8C9CB;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.cwrcBtn {
+    display: flex;
+    height: 48px;
+    padding: 8px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 100px;
+    background: #F3FBF4;
+    color: #17AF26;
+    font-family: pm;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cwrOffer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.cwroStatus {
+    height: 6px;
+    width: 100%;
+    border-radius: 100px;
+    background: #f4f4f4;
+    position: relative;
+}
+
+.cwroStatusWrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 60%;
+    border-radius: 100px;
+    background: #17AF26;
+}
+
+.cwroText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    align-self: stretch;
+}
+
+.cwrotTop {
+    color: #717378;
+    font-family: pr;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.cwrotBottom {
+    color: #447F6D;
+    font-family: pm;
+    font-size: 14px;
+    line-height: 150%;
+    text-decoration-line: underline;
+}
+
+.cwrBtn {
+    display: flex;
+    height: 56px;
+    padding: 0px 40px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 16px;
+    align-self: stretch;
+    border-radius: 100px;
+    background: var(--dark-green);
+    color: var(--skin);
+    font-family: pm;
+    font-size: 16px;
+    line-height: 150%;
+    cursor: pointer;
+}
+
+.cwrLine {
+    height: 1px;
+    background: #f4f4f4;
+    width: 100%;
+}
+
+@media (max-width: 540px) {
+    .orderSummaryBox {
+        width: 100%;
+        padding: 12px;
+    }
+
+    .cwrCoupon input {
+        height: 50px;
+        width: 100%;
+    }
+}

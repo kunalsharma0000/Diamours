@@ -1,0 +1,257 @@
+@font-face {
+  font-family: pr;
+  src: url("../../public/assets/fonts/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: psb;
+  src: url('../../public/assets/fonts/Poppins-SemiBold.ttf');
+}
+
+.navbar {
+  font-family: pr;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 85px;
+  background-color: #EEF2E3;
+  /*background-image:url('../../public/assets/img/headerimg.jpg');*/
+  background-repeat: no-repeat;
+  background-size:cover;
+  /*background: var(--skin);*/
+}
+
+.navLogo {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navLogo img {
+  width: 100%;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  text-transform: uppercase;
+}
+
+a.navLink {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #01321F; /*var(--dark-green);*/
+  text-decoration: none;
+}
+
+.navHam {
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #01321F; /*var(--dark-green);*/
+  display: none;
+}
+
+.mobileNavLinks {
+  position: absolute;
+  z-index: 1000;
+  top: 62px;
+  left: 0;
+  width: 100%;
+  background: #eef2e3;
+  display: flex;
+  flex-direction: column;
+}
+
+a.mobileNavLink {
+  padding: 10px 20px;
+  color: var(--dark-green);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.navLink.dRemove {
+  display: none;
+}
+.dropdown {
+  position: absolute;
+  background: #EEF2E3;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.dropdown a {
+  display: block;
+  padding: 5px 0;
+  color: var(--dark-green);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Navbar.module.css */
+.curr{
+  position: relative;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.currencyDropdown {
+  position: absolute;
+  top: 7%;
+  right: 3%;
+  background-color: #fff; /* White background color */
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Box shadow for dropdown */
+  z-index: 99;
+}
+
+.currencyButton {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  text-align: left;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.currencyButton:hover {
+  background-color: #f2f2f2; /* Hover background color */
+}
+
+.currencyIcon {
+  margin-right: 8px;
+}
+
+.pindropdown {
+  position: absolute;
+  background: #eef2e3;
+  padding: 50px;
+  border-radius: 5px;
+  z-index: 1000;
+  right: 5vw;
+  display: flex;flex-direction: column; align-items: center;
+}
+
+/* .pin{
+  position: relative;
+} */
+.pintitle{
+  font-size: 18px;
+  font-family: ctr;
+  color: var(--dark-green);
+  text-transform: capitalize;
+}
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 16px;
+    height: 62px;
+  }
+
+  .navLinks {
+    gap: 30px;
+  }
+  .navLink.dRemove {
+    display: block;
+  }
+  a.navLink {
+    font-size: 14px;
+  }
+  .cart {
+    margin-right: -27px;
+  }
+  .navLink.mRemove {
+    display: none;
+  }
+
+  .navHam {
+    display: initial;
+  }
+  .navLogo {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .dropdown {
+    background: var(--skin);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000;
+    display: block;
+  }
+  .dropdown a {
+    display: block;
+    padding: 5px 0;
+    color: var(--dark-green);
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .currencyDropdown {
+
+    top: 7%;
+    right: 20%;
+
+  }
+}
+.currActive{
+  color: var(--light-green);
+  font-weight: bold;
+
+}
+
+.resultCont{
+  display: flex;flex-direction: column; align-items: center;
+}
+
+.input {
+  width: 10vw;
+  height: 4vh;
+  font-family: pr;
+  font-size: 16px;
+}
+.inputBtn {
+  height: 4vh;
+  font-weight: bold;
+  padding: 10px;
+  color: white;
+  font-family: pr;
+  background: var(--dark-green);
+  display: flex;
+  align-items: center;
+}
+.inputContainer {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+}
+
+
+@media (max-width: 600px) {
+  .result-text h1 {
+    font-size: 30px;
+  }
+  .input {
+    width: 50vw;
+    height: 4vh;
+    font-family: pr;
+    font-size: 16px;
+  }
+  .input-container {
+    margin-top: 30px;
+  }
+}
+
+.checkpin{
+  font-size: 12px;
+  text-transform: capitalize;
+  cursor: pointer;
+  color:#01321F;
+}
+.pincheck{
+  font-family: psb;
+  display: flex; align-items: center;
+  color: #01321F; /*var(--light-green);*/
+}

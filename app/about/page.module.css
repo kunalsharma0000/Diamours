@@ -1,0 +1,413 @@
+@font-face {
+  font-family: ctr;
+  src: url("../../public/assets/fonts/Canela-Regular-Trial.otf");
+}
+
+@font-face {
+  font-family: ctm;
+  src: url("../../public/assets/fonts/Canela-Medium-Trial.otf");
+}
+
+@font-face {
+  font-family: cctb;
+  src: url("../../public/assets/fonts/CanelaCondensed-Bold-Trial.otf");
+}
+
+@font-face {
+  font-family: pr;
+  src: url("../../public/assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: pm;
+  src: url("../../public/assets/fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: psb;
+  src: url("../../public/assets/fonts/Poppins-SemiBold.ttf");
+}S
+.boldtext{
+  font-weight:bold;
+}
+.about {
+  /* background: var(--light-green); */
+  background: #EEF2E3;
+}
+
+.aboutHero {
+  height: 100vh;
+  background: #01321F;
+  /* background: var(--dark-green); */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+}
+
+.ahlText1 {
+  color: var(--skin);
+  font-family: ctr;
+  font-size: 48px;
+  line-height: 150%;
+  letter-spacing: -0.528px;
+}
+
+.aboutHeroRight {
+  height: 100%;
+  display: flex;
+}
+
+/* .aboutHeroRight .img1 {
+  height: 100%;
+}
+
+.aboutHeroRight .img2 {
+  padding-left: 10px;
+} */
+
+.aboutHistory {
+  color: #01321F;;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  padding: 80px;
+}
+
+.aboutHeading {
+  font-family: ctr;
+  text-align: center;
+  font-size: 40px;
+  line-height: 150%;
+  letter-spacing: -0.44px;
+  position: relative;
+}
+
+.aboutPara {
+  text-align: center;
+  font-family: pr;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: -0.198px;
+  /* max-width: 745px; */
+  max-width: 1000px;
+  padding: 10px 0;
+}
+.aboutPara p {
+  margin-y: 20px;
+}
+.aboutDiscover {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 80px 80px;
+}
+
+.aboutDiscoverLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.adlText1 {
+  color: #01321F;
+  font-family: ctr;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: -0.352px;
+}
+
+.adlText2 {
+  color: #01321F;
+  font-family: ctr;
+  font-size: 40px;
+  line-height: 150%;
+  letter-spacing: -0.44px;
+  width: 464px;
+}
+
+.adlText3 {
+  color:#01321F;
+  font-family: pr;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.198px;
+  width: 459px;
+}
+
+.aboutDiscoverRight {
+  position: relative;
+}
+
+.adrBigImg {
+  height: 509px;
+}
+
+.adrSmallImg {
+  position: absolute;
+  bottom: -40px;
+  left: -160px;
+  height: 268px;
+}
+
+.aboutMission {
+  /* color: var(--dark-green); */
+  color: #EEF2E3;
+  background: #01321F;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 80px;
+  gap: 40px;
+}
+
+.aboutTeam {
+  padding: 80px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.aboutTeamHeading {
+  color: rgb(241, 224, 126);
+  text-align: center;
+  font-family: ctr;
+  font-size: 40px;
+  line-height: 150%;
+  letter-spacing: -0.44px;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.aboutHeadingTeam {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.aboutCircle {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  background: var(--dark-green);
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.aboutTeamMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 40px;
+}
+
+.aTMImage {
+  width: 340px;
+  height: 320px;
+}
+
+.aTMImage img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.aTMText {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 100%;
+  text-align: left;
+}
+
+.aTMTHeading {
+  font-family: ctr;
+  font-size: 30px;
+  line-height: 150%;
+  letter-spacing: -0.44px;
+  color: #01321F;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.aTMTBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--dark-green);
+}
+
+.aTMTBName {
+  text-align: center;
+  font-family: ctr;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: -0.22px;
+  text-transform: capitalize;
+}
+
+.aTMTBDesg {
+  text-align: center;
+  font-family: pr;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.176px;
+  text-transform: capitalize;
+}
+
+.aboutTeamWrap {
+  display: flex;
+  justify-content: center;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  gap: 80px;
+  padding: 40px;
+}
+@media (max-width: 1024px) {
+  .aboutHero {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 700px;
+  }
+  .aboutHeroRight .img1 {
+    max-height: 500px;
+  }
+  .aboutDiscover {
+    flex-direction: column-reverse;
+    gap: 60px;
+  }
+}
+@media (max-width: 540px) {
+  .aboutHero {
+    height: 421px;
+    padding: 40px 16px 0;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .aboutHeroRight .img1 {
+    max-height: 300px;
+  }
+
+  .ahlText1 {
+    font-size: 32px;
+  }
+
+  .aboutHistory {
+    gap: 20px;
+    padding: 40px 16px;
+  }
+
+  .aboutHeading {
+    font-size: 32px;
+  }
+
+  .aboutPara {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .aboutDiscover {
+    justify-content: center;
+    flex-direction: column-reverse;
+    padding: 60px 16px 60px;
+  }
+
+  .aboutDiscoverLeft {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    padding: 40px 16px;
+  }
+
+  .adlText1 {
+    font-size: 16px;
+  }
+
+  .adlText2 {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .adlText3 {
+    font-size: 12px;
+    width: 100%;
+  }
+
+  .aboutDiscoverRight {
+    position: relative;
+    height: 310px;
+    width: 100%;
+  }
+
+  .adrBigImg {
+    position: absolute;
+    top: 0;
+    right: -16px;
+    height: 310px;
+  }
+
+  .adrSmallImg {
+    bottom: 0px;
+    left: -16px;
+    height: 194px;
+  }
+
+  .aboutMission {
+    gap: 20px;
+    padding: 40px 16px;
+  }
+
+  .aboutTeam {
+    padding: 40px 16px;
+  }
+
+  .aboutTeamHeading {
+    font-size: 24px;
+  }
+
+  .aboutCircle {
+    width: 60px;
+    height: 60px;
+    right: -20px;
+  }
+
+  .aboutTeamMain {
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .aTMImage {
+    width: 280px;
+    height: 260px;
+  }
+
+  .aTMTHeading {
+    font-size: 24px;
+  }
+
+  .aTMTPara {
+    font-size: 14px;
+  }
+
+  .aboutTeamWrap {
+    gap: 20px;
+    padding: 20px 16px;
+  }
+}

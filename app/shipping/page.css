@@ -1,0 +1,8 @@
+.ship{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+    color: #F6DDB8;
+    background-color: #447F6D;
+}

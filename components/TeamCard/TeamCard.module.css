@@ -1,0 +1,96 @@
+@font-face {
+    font-family: ctr;
+    src: url('../../public/assets/fonts/Canela-Regular-Trial.otf');
+}
+
+@font-face {
+    font-family: ctm;
+    src: url('../../public/assets/fonts/Canela-Medium-Trial.otf');
+}
+
+@font-face {
+    font-family: cctb;
+    src: url('../../public/assets/fonts/CanelaCondensed-Bold-Trial.otf');
+}
+
+@font-face {
+    font-family: pr;
+    src: url('../../public/assets/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: pm;
+    src: url('../../public/assets/fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: psb;
+    src: url('../../public/assets/fonts/Poppins-SemiBold.ttf');
+}
+
+.teamCard {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.teamImg {
+    width: 200px;
+    height: 200px;
+    /* border-radius: 50%; */
+}
+
+.teamImg img {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(.4);
+}
+
+.teamText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--dark-green);
+}
+
+.teamName {
+    text-align: center;
+    font-family: ctr;
+    font-size: 20px;
+    line-height: 150%;
+    letter-spacing: -0.22px;
+    text-transform: capitalize;
+}
+
+.teamDesg {
+    text-align: center;
+    font-family: pr;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.176px;
+    text-transform: capitalize;
+}
+
+@media (max-width: 540px) {
+    .teamCard {
+        gap: 20px;
+    }
+
+    .teamImg {
+        width: 108px;
+        height: 108px;
+    }
+
+    .teamName {
+        font-size: 14px;
+    }
+
+    .teamDesg {
+        font-size: 10px;
+    }
+}

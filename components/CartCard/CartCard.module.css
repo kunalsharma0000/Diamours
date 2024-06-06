@@ -1,0 +1,169 @@
+@font-face {
+    font-family: ctr;
+    src: url('../../public/assets/fonts/Canela-Regular-Trial.otf');
+}
+
+@font-face {
+    font-family: ctm;
+    src: url('../../public/assets/fonts/Canela-Medium-Trial.otf');
+}
+
+@font-face {
+    font-family: cctb;
+    src: url('../../public/assets/fonts/CanelaCondensed-Bold-Trial.otf');
+}
+
+@font-face {
+    font-family: pr;
+    src: url('../../public/assets/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: pm;
+    src: url('../../public/assets/fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: psb;
+    src: url('../../public/assets/fonts/Poppins-SemiBold.ttf');
+}
+
+.cartCard {
+    width: 590px;
+    display: flex;
+    align-items: center;
+    gap: 29px;
+}
+
+.ccImg {
+    display: flex;
+    width: 210px;
+    height: 210px;
+    padding: 26.959px 19.865px;
+    justify-content: center;
+    align-items: center;
+    border: 0.709px solid #808080;
+}
+
+.ccImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ccText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.cctExtra{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-family: pr;
+    color: var(--light-green);
+}
+
+.cctName {
+    color: #000;
+    text-align: center;
+    font-family: pr;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: -0.264px;
+}
+
+.cctPrice {
+    color: var(--light-green);
+    text-align: center;
+    font-family: psb;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -0.198px;
+}
+
+.cctNumber {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cctnbtn {
+    display: flex;
+    width: 32px;
+    height: 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid #000;
+    cursor: pointer;
+}
+
+.cctnNumber {
+    color: #000;
+    text-align: center;
+    font-family: pr;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -0.198px;
+}
+
+.cctDel {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #808080;
+    text-align: center;
+    font-family: pr;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -0.198px;
+}
+
+@media (max-width: 540px) {
+
+    .cartCard {
+        width: 100%;
+        gap: 16px;
+    }
+
+    .ccImg {
+        width: 104px;
+        height: 104px;
+        padding: 10px 16px;
+    }
+
+    .ccText {
+        gap: 8px;
+    }
+
+    .cctName {
+        font-size: 12px;
+    }
+
+    .cctPrice {
+        font-size: 10px;
+    }
+
+    .cctNumber {
+        gap: 8px;
+    }
+
+    .cctnbtn {
+        width: 18px;
+        height: 18px;
+        border-radius: 2px;
+    }
+
+    .cctnNumber {
+        font-size: 12px;
+    }
+
+    .cctDel {
+        gap: 6px;
+        font-size: 14px;
+    }
+}

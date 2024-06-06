@@ -1,0 +1,269 @@
+@font-face {
+  font-family: ctr;
+  src: url("../../public/assets/fonts/Canela-Regular-Trial.otf");
+}
+
+@font-face {
+  font-family: ctm;
+  src: url("../../public/assets/fonts/Canela-Medium-Trial.otf");
+}
+
+@font-face {
+  font-family: cctb;
+  src: url("../../public/assets/fonts/CanelaCondensed-Bold-Trial.otf");
+}
+
+@font-face {
+  font-family: pr;
+  src: url("../../public/assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: pm;
+  src: url("../../public/assets/fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: psb;
+  src: url("../../public/assets/fonts/Poppins-SemiBold.ttf");
+}
+
+.cart {
+  padding: 20px 0;
+}
+
+.cartHeading {
+  padding: 20px;
+  margin: 0 60px;
+  border-bottom: 2px solid var(--dark-green);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chLeft {
+  color: var(--dark-green);
+  text-align: center;
+  font-family: ctr;
+  font-size: 32px;
+  line-height: 150%;
+  letter-spacing: -0.352px;
+}
+
+.chRight {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--light-green);
+  text-align: center;
+  font-family: pm;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.198px;
+}
+
+.cartWrap {
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.cwLeft {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.orderSummaryBox {
+  display: flex;
+  width: 420px;
+  padding: 24px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  border-radius: 16px;
+  border: 1px solid #f4f4f4;
+  height: fit-content;
+}
+
+.cwrPrice {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.cwrpWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+
+.cwrpwLeft {
+  color: #9d9ea2;
+  font-family: pr;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.cwrpwRight {
+  color: #060709;
+  font-family: psb;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.cwrCoupon {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.cwrCoupon input {
+  height: 48px;
+  padding: 4px 24px;
+  border-radius: 8px;
+  border: 1px solid #f4f4f4;
+  background: var(--white);
+  outline: none;
+  font-family: pr;
+  color: #c8c9cb;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.cwrcBtn {
+  display: flex;
+  height: 48px;
+  padding: 8px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 100px;
+  background: #f3fbf4;
+  color: #17af26;
+  font-family: pm;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  cursor: pointer;
+}
+
+.cwrOffer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+}
+
+.cwroStatus {
+  height: 6px;
+  width: 100%;
+  border-radius: 100px;
+  background: #f4f4f4;
+  position: relative;
+}
+
+.cwroStatusWrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 60%;
+  border-radius: 100px;
+  background: #17af26;
+}
+
+.cwroText {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  align-self: stretch;
+}
+
+.cwrotTop {
+  color: #717378;
+  font-family: pr;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.cwrotBottom {
+  color: #447f6d;
+  font-family: pm;
+  font-size: 14px;
+  line-height: 150%;
+  text-decoration-line: underline;
+}
+
+.cwrBtn {
+  display: flex;
+  height: 56px;
+  padding: 0px 40px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 16px;
+  align-self: stretch;
+  border-radius: 100px;
+  background: var(--dark-green);
+  color: var(--skin);
+  font-family: pm;
+  font-size: 16px;
+  line-height: 150%;
+  cursor: pointer;
+}
+
+.cwrLine {
+  height: 1px;
+  background: #f4f4f4;
+  width: 100%;
+}
+@media (max-width: 1024px) {
+  .cartWrap {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 540px) {
+  .cartHeading {
+    padding: 16px;
+    margin: 0 16px;
+  }
+
+  .chLeft {
+    font-size: 18px;
+  }
+
+  .chRight {
+    font-size: 12px;
+  }
+
+  .cartWrap {
+    padding: 20px 16px;
+    flex-direction: column;
+  }
+
+  .orderSummaryBox {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .cwrCoupon input {
+    height: 50px;
+    width: 100%;
+  }
+}
+
+.pad {
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

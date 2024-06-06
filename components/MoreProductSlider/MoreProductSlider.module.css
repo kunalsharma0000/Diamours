@@ -1,0 +1,127 @@
+.productSlider {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+a.productLink{
+  text-decoration: none;
+}
+
+.productSliderCard {
+  width: 280px;
+  padding: 32px 28px;
+  border: 1px solid #808080;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 20px;
+}
+
+.productBag {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 32px;
+  width: 32px;
+  border: 1px solid #808080;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.pscImg {
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  background: var(--white);
+  border-radius: 10px;
+}
+
+.pscImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.pscText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  color: #01321F; /*var(--skin);*/
+}
+
+.psctName {
+  color: #01321F; /*var(--skin);*/
+  text-align: center;
+  font-family: pm;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.198px;
+}
+
+.psctPrice {
+  color: #01321F; /*var(--skin);*/
+  text-align: center;
+  font-family: psb;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: -0.198px;
+}
+
+.sliderExtras {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sliderNavButton {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sliderNavButton button {
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  background: var(--white);
+  color: var(--dark-green);
+  border: 1px solid #000;
+  font-size: 18px;
+  z-index: 4;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (max-width: 540px) {
+  .productSlider {
+    padding: 2rem 0 4rem;
+  }
+
+  .productSliderCard {
+    padding: 0.4rem;
+    width: 206px;
+  }
+
+  .productBag {
+    top: 20px;
+    right: 20px;
+  }
+}

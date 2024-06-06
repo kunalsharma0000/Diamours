@@ -1,0 +1,118 @@
+@font-face {
+    font-family: ctr;
+    src: url('../../public/assets/fonts/Canela-Regular-Trial.otf');
+}
+
+@font-face {
+    font-family: ctm;
+    src: url('../../public/assets/fonts/Canela-Medium-Trial.otf');
+}
+
+@font-face {
+    font-family: cctb;
+    src: url('../../public/assets/fonts/CanelaCondensed-Bold-Trial.otf');
+}
+
+@font-face {
+    font-family: pr;
+    src: url('../../public/assets/fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: pm;
+    src: url('../../public/assets/fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: psb;
+    src: url('../../public/assets/fonts/Poppins-SemiBold.ttf');
+}
+
+.checkout {
+    padding: 20px 0;
+}
+
+.backButton {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #000;
+    text-align: center;
+    font-family: pr;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: -0.132px;
+    padding: 20px 40px;
+    text-decoration: underline;
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+
+.checkoutHeading {
+    padding: 20px;
+    margin: 0 60px;
+    border-bottom: 2px solid var(--dark-green);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chLeft {
+    color: var(--dark-green);
+    text-align: center;
+    font-family: ctr;
+    font-size: 32px;
+    line-height: 150%;
+    letter-spacing: -0.352px;
+}
+
+.chRight {
+    /* display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--light-green);
+    text-align: center;
+    font-family: pm;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: -0.198px; */
+}
+
+.checkoutWrap {
+    /* padding: 20px 80px; */
+    /* display: flex; */
+    /* justify-content: space-between; */
+    /* gap: 40px; */
+}
+
+.cwLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+@media (max-width: 540px) {
+    .checkoutHeading {
+        padding: 16px;
+        margin: 0 16px;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .chLeft {
+        font-size: 18px;
+    }
+
+    .chRight {
+        font-size: 12px;
+    }
+
+    .checkoutWrap {
+        /* padding: 20px 16px; */
+        /* flex-direction: column-reverse; */
+    }
+}
